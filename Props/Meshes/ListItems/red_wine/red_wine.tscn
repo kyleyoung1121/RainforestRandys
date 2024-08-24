@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbmqki87ow1ij"]
+
+[ext_resource type="PackedScene" uid="uid://nynl6k5n454n" path="res://Props/Meshes/ListItems/red_wine/red_wine.glb" id="1_x70x2"]
+
+[node name="red_wine" instance=ExtResource("1_x70x2")]

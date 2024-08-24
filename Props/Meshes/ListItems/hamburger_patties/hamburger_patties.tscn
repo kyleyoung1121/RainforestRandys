@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://th2aug7p2tuc"]
+
+[ext_resource type="PackedScene" uid="uid://dv0snn50g3brb" path="res://Props/Meshes/ListItems/hamburger_patties/hamburger_patties.glb" id="1_e04c2"]
+
+[node name="hamburger_patties" instance=ExtResource("1_e04c2")]

@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cmwi7mgqyu4ur"
+path.s3tc="res://.godot/imported/tortilla_Plastic Wrap Base Color.png-8f74883f24cd1788d9022c8eb3bd6e12.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "95e2f2d90ab88d108d9a673ce2110bfb"
+}
+
+[deps]
+
+source_file="res://Props/Meshes/ListItems/tortilla/tortilla_Plastic Wrap Base Color.png"
+dest_files=["res://.godot/imported/tortilla_Plastic Wrap Base Color.png-8f74883f24cd1788d9022c8eb3bd6e12.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

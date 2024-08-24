@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://wmjb32gae4yr"]
+
+[ext_resource type="PackedScene" uid="uid://cea68l1a33o41" path="res://Props/Meshes/ListItems/mak_and_cheese/mak_and_cheese.glb" id="1_bgej8"]
+
+[node name="mak_and_cheese" instance=ExtResource("1_bgej8")]

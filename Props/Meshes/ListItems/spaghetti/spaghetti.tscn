@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bde00dmc757ab"]
+
+[ext_resource type="PackedScene" uid="uid://djejrk1glx6rv" path="res://Props/Meshes/ListItems/spaghetti/spaghetti.glb" id="1_26s8b"]
+
+[node name="spaghetti" instance=ExtResource("1_26s8b")]

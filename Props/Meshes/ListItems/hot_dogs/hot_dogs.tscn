@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfahf5setf3ci"]
+
+[ext_resource type="PackedScene" uid="uid://josuw5vf0jqx" path="res://Props/Meshes/ListItems/hot_dogs/hot_dogs.glb" id="1_lqq2f"]
+
+[node name="hot_dogs" instance=ExtResource("1_lqq2f")]

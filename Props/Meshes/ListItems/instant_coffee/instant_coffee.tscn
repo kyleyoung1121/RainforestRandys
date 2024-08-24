@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch8tooxikqhkn"]
+
+[ext_resource type="PackedScene" uid="uid://do6eqaft7c4lc" path="res://Props/Meshes/ListItems/instant_coffee/instant_coffee.glb" id="1_0imgy"]
+
+[node name="instant_coffee" instance=ExtResource("1_0imgy")]

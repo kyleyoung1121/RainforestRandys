@@ -1,0 +1,6 @@
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+Props/Meshes/store/store_factory_brick_nor_gl_4k.png filter=lfs diff=lfs merge=lfs -text
+Props/Meshes/store/store.glb filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://uvgcd5snx10r"]
+
+[ext_resource type="PackedScene" uid="uid://0au8n0egxm5g" path="res://Props/Meshes/ListItems/hot_sauce/hot_sauce.glb" id="1_y1wci"]
+
+[node name="hot_sauce" instance=ExtResource("1_y1wci")]

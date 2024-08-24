@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b71hotgbtaitd"
+path.s3tc="res://.godot/imported/milk_milk_label.png-375bfc56ae8ded1a73168d38f72a2f0d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "461e9d590f26e502c8a99441c65f2bb9"
+}
+
+[deps]
+
+source_file="res://Props/Meshes/ListItems/milk/milk_milk_label.png"
+dest_files=["res://.godot/imported/milk_milk_label.png-375bfc56ae8ded1a73168d38f72a2f0d.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

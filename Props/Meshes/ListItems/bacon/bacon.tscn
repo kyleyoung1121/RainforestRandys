@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcqogiyryu4o5"]
+
+[ext_resource type="PackedScene" uid="uid://dus44txfyf6v5" path="res://Props/Meshes/ListItems/bacon/bacon.glb" id="1_cgb1c"]
+
+[node name="bacon" instance=ExtResource("1_cgb1c")]

@@ -1,0 +1,42 @@
+extends Node
+
+
+var departments = {
+	
+	'tortilla': 'bread',
+	'spaghetti': 'bread',
+	'instant_noodles': 'bread',
+	'mak_and_cheese': 'bread',
+	
+	'schlamey': 'canned',
+	'hot_sauce': 'canned',
+	'tomato_soup': 'canned',
+	'canned_beans': 'canned',
+	'instant_coffee': 'canned',
+	
+	'toy_robot': 'toys',
+	
+	'apple_pie': 'bakery',
+	'pizza_dough': 'bakery',
+	'brownies': 'bakery',
+	
+	'apple_juice': 'drinks',
+	
+	'red_wine': 'wine',
+	'white_wine': 'wine',
+	
+	'milk': 'dairy',
+	
+	'ham': 'meat',
+	'bacon': 'meat',
+	'chicken_breast': 'meat',
+	'hamburger_patties': 'meat',
+	'hot_dogs': 'meat',
+	
+	'beer': 'beer',
+	
+	'cups': 'cookware',
+	
+	'soda': 'cafe',
+	
+}

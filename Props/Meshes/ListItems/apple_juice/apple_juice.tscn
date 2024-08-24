@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbogak558fxjj"]
+
+[ext_resource type="PackedScene" uid="uid://lantmqhvyaki" path="res://Props/Meshes/ListItems/apple_juice/apple_juice.glb" id="1_phebu"]
+
+[node name="apple_juice" instance=ExtResource("1_phebu")]

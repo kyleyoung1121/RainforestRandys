@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://0f167iexewag"]
+
+[ext_resource type="PackedScene" uid="uid://b2dxvu5uumufh" path="res://Props/Meshes/ListItems/schlamey/schlamey.glb" id="1_714co"]
+
+[node name="schlamey" instance=ExtResource("1_714co")]

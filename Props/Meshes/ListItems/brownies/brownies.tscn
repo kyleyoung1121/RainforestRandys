@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo4eiabuda6e3"]
+
+[ext_resource type="PackedScene" uid="uid://dp5rnaqf7aujx" path="res://Props/Meshes/ListItems/brownies/brownies.glb" id="1_rudnj"]
+
+[node name="brownies" instance=ExtResource("1_rudnj")]

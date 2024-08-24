@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwjh4pk0suaog"]
+
+[ext_resource type="PackedScene" uid="uid://ck08hbnnav81n" path="res://Props/Meshes/ListItems/tortilla/tortilla.glb" id="1_0dh4h"]
+
+[node name="tortilla" instance=ExtResource("1_0dh4h")]

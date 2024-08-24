@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt8k2w2seoqmg"]
+
+[ext_resource type="PackedScene" uid="uid://pgftxjd51omp" path="res://Props/Meshes/ListItems/instant_noodles/instant_noodles.glb" id="1_ajowh"]
+
+[node name="instant_noodles" instance=ExtResource("1_ajowh")]

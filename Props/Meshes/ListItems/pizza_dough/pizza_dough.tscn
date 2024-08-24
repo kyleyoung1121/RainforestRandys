@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7g3nrwyqdyh2"]
+
+[ext_resource type="PackedScene" uid="uid://cytjemvu0dhbv" path="res://Props/Meshes/ListItems/pizza_dough/pizza_dough.glb" id="1_rf0o0"]
+
+[node name="pizza_dough" instance=ExtResource("1_rf0o0")]

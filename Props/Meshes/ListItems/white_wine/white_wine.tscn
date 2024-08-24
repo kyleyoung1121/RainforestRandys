@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgiytwt5ukavw"]
+
+[ext_resource type="PackedScene" uid="uid://dcwa2uvsck6ap" path="res://Props/Meshes/ListItems/white_wine/white_wine.glb" id="1_rylyk"]
+
+[node name="white_wine" instance=ExtResource("1_rylyk")]

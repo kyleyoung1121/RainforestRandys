@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6k5apl72jldu"]
+
+[ext_resource type="PackedScene" uid="uid://c5kirdqw4n0as" path="res://Props/Meshes/ListItems/soda/soda.glb" id="1_1wk7i"]
+
+[node name="soda" instance=ExtResource("1_1wk7i")]

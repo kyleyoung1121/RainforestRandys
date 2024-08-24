@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmp0ru0xp2wc4"]
+
+[ext_resource type="PackedScene" uid="uid://dsmn5evt5ns3i" path="res://Props/Meshes/ListItems/canned_beans/canned_beans.glb" id="1_2jhpo"]
+
+[node name="canned_beans" instance=ExtResource("1_2jhpo")]

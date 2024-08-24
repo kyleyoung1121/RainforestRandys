@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2gdsdpm4di4g"]
+
+[ext_resource type="PackedScene" uid="uid://yp01g30bo0ye" path="res://Props/Meshes/ListItems/chicken_breast/chicken_breast.glb" id="1_j0w18"]
+
+[node name="chicken_breast" instance=ExtResource("1_j0w18")]

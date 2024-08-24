@@ -1,0 +1,9 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+.mono/
+.caches/
+.DS_Store
+.vs/
+*.log
+export_presets.cfg
