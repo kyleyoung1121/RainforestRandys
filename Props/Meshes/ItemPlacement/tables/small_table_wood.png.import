@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddougjdg6nnrc"
-path.s3tc="res://.godot/imported/small_table_wood.png-b4eac9bb7717128442676533aee103b3.s3tc.ctex"
+path.s3tc="res://.godot/imported/small_table_wood.png-c579161ae1804690c4e8567742c15526.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Props/Meshes/tables/small_table_wood.png"
-dest_files=["res://.godot/imported/small_table_wood.png-b4eac9bb7717128442676533aee103b3.s3tc.ctex"]
+source_file="res://Props/Meshes/ItemPlacement/tables/small_table_wood.png"
+dest_files=["res://.godot/imported/small_table_wood.png-c579161ae1804690c4e8567742c15526.s3tc.ctex"]
 
 [params]
 

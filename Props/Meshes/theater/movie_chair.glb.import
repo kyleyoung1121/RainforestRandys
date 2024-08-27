@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dybovcw5hr8mj"
-path="res://.godot/imported/meat_shelf.glb-779236dd6c7991859fe249037cc5b1ca.scn"
+uid="uid://dcyfp2a4ym7hx"
+path="res://.godot/imported/movie_chair.glb-a1eeb50d13412549d226d3ea19446276.scn"
 
 [deps]
 
-source_file="res://Props/Meshes/meat_shelf/meat_shelf.glb"
-dest_files=["res://.godot/imported/meat_shelf.glb-779236dd6c7991859fe249037cc5b1ca.scn"]
+source_file="res://Props/Meshes/theater/movie_chair.glb"
+dest_files=["res://.godot/imported/movie_chair.glb-a1eeb50d13412549d226d3ea19446276.scn"]
 
 [params]
 

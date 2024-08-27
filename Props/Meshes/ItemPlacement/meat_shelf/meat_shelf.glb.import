@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b5y20bcyo56di"
-path="res://.godot/imported/small_table.glb-d36c8f054c399ccafb1fbe38dd227664.scn"
+uid="uid://dybovcw5hr8mj"
+path="res://.godot/imported/meat_shelf.glb-28ac5183f9b7af7f7c37651037edb1be.scn"
 
 [deps]
 
-source_file="res://Props/Meshes/tables/small_table.glb"
-dest_files=["res://.godot/imported/small_table.glb-d36c8f054c399ccafb1fbe38dd227664.scn"]
+source_file="res://Props/Meshes/ItemPlacement/meat_shelf/meat_shelf.glb"
+dest_files=["res://.godot/imported/meat_shelf.glb-28ac5183f9b7af7f7c37651037edb1be.scn"]
 
 [params]
 

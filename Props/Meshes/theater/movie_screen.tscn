@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c82v0gmkyww53"]
+
+[ext_resource type="PackedScene" uid="uid://d272dm10nliy3" path="res://Props/Meshes/theater/movie_screen.glb" id="1_3vp1h"]
+
+[node name="movie_screen" instance=ExtResource("1_3vp1h")]
