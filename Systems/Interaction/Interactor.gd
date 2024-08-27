@@ -3,9 +3,12 @@ extends Area3D
 
 var controller: Node3D
 
+signal item_collected
+
 
 func interact(interactable: Interactable) -> void:
 	interactable.interacted.emit(self)
+	item_collected.emit(interactable.item_name)
 
 
 func focus(interactable: Interactable) -> void:

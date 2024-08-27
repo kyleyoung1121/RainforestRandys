@@ -1,25 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkk6ungki5g5g"]
+[gd_scene load_steps=6 format=3 uid="uid://dkk6ungki5g5g"]
 
 [ext_resource type="Script" path="res://Entities/Player/Player.gd" id="1_oi81s"]
+[ext_resource type="PackedScene" uid="uid://daua1ku7p3rtk" path="res://Props/Meshes/phone/phone.tscn" id="2_esboq"]
 [ext_resource type="PackedScene" uid="uid://weovo5x1gxhd" path="res://Systems/Interaction/PlayerInteractor.tscn" id="2_l05ql"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_uwtro"]
-radius = 0.2
-height = 1.2
+radius = 0.1
+height = 1.1
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g7obl"]
-radius = 0.2
-height = 1.2
+radius = 0.1
+height = 1.1
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_oi81s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.596249, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.550166, 0)
 mesh = SubResource("CapsuleMesh_uwtro")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.597745, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.551668, 0)
 shape = SubResource("CapsuleShape3D_g7obl")
 
 [node name="Head" type="Node3D" parent="."]
@@ -27,10 +28,89 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
 
+[node name="Phone" type="Node3D" parent="Head/Camera3D"]
+transform = Transform3D(0.825854, -0.0805353, 0.558103, -0.00337619, 0.989024, 0.147714, -0.563873, -0.123875, 0.816518, -0.285302, -0.20088, -0.290089)
+
+[node name="PhoneModel" parent="Head/Camera3D/Phone" instance=ExtResource("2_esboq")]
+transform = Transform3D(1, 0, 2.98023e-08, -7.45058e-09, 1, 0, 5.96046e-08, 1.49012e-08, 1, 0, 0, 0)
+
+[node name="FirstItem" type="Label3D" parent="Head/Camera3D/Phone"]
+transform = Transform3D(0.075, 0, 3.72529e-09, -3.72529e-09, 0.0749999, -6.98492e-09, 4.09782e-08, 2.79397e-09, 0.075, -0.0514104, 0.0882161, 0.008)
+modulate = Color(0, 0, 0, 1)
+text = "-  Spaghetti"
+font_size = 22
+outline_size = 1
+horizontal_alignment = 0
+vertical_alignment = 0
+line_spacing = -2.81
+autowrap_mode = 1
+width = 248.19
+
+[node name="FirstItemDepartment" type="Label3D" parent="Head/Camera3D/Phone"]
+transform = Transform3D(0.075, -1.86265e-09, 1.49012e-08, -3.25963e-09, 0.0749999, -5.12227e-09, 3.72529e-08, 3.25963e-09, 0.075, -0.0456647, 0.0762173, 0.008)
+modulate = Color(0, 0, 0, 1)
+text = "<Frozen>"
+font_size = 20
+outline_size = 1
+horizontal_alignment = 0
+vertical_alignment = 0
+line_spacing = 3.0
+autowrap_mode = 1
+width = 248.19
+
+[node name="RemainingItems" type="Label3D" parent="Head/Camera3D/Phone"]
+transform = Transform3D(0.075, 4.65661e-10, 0, -3.25963e-09, 0.0749999, -5.58794e-09, 3.72529e-08, 2.79397e-09, 0.075, -0.0514105, 0.0598456, 0.008)
+modulate = Color(0, 0, 0, 1)
+text = "-  Marinara Sauce
+-  Ground Beef
+-  Garlic Bread
+-  Parmesan Cheese
+-  Salad Mix
+-  Red Wine
+-  White Wine"
+font_size = 22
+outline_size = 1
+horizontal_alignment = 0
+vertical_alignment = 0
+line_spacing = -2.81
+autowrap_mode = 1
+width = 248.19
+
+[node name="LineBreak" type="Label3D" parent="Head/Camera3D/Phone"]
+transform = Transform3D(0.075, 1.86265e-09, -1.11759e-08, -2.32831e-09, 0.075, -3.25963e-09, 2.98023e-08, 2.32831e-09, 0.075, -7.45058e-08, -0.0320441, 0.00800002)
+modulate = Color(0, 0, 0, 1)
+text = "___________________________
+..."
+font_size = 20
+outline_size = 1
+vertical_alignment = 0
+line_spacing = -2.81
+autowrap_mode = 1
+width = 248.19
+
+[node name="LineBreak2" type="Label3D" parent="Head/Camera3D/Phone"]
+transform = Transform3D(0.075, 1.86265e-09, -1.11759e-08, -2.32831e-09, 0.075, -3.25963e-09, 2.98023e-08, 2.32831e-09, 0.075, 2.98023e-08, -0.0546459, 0.00800002)
+modulate = Color(0, 0, 0, 1)
+text = "4 Additional Items"
+font_size = 20
+outline_size = 1
+vertical_alignment = 0
+line_spacing = -2.81
+autowrap_mode = 1
+width = 248.19
+
+[node name="LowPosition" type="Marker3D" parent="Head/Camera3D"]
+transform = Transform3D(0.825854, -0.0805353, 0.558103, -0.0033762, 0.989024, 0.147714, -0.563873, -0.123875, 0.816518, -0.285302, -0.20088, -0.290089)
+
+[node name="HighPosition" type="Marker3D" parent="Head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0329717, -0.247587)
+
 [node name="PlayerInteractor" parent="Head" node_paths=PackedStringArray("player") instance=ExtResource("2_l05ql")]
 player = NodePath("../..")
 
 [node name="CollisionShape3D" parent="Head/PlayerInteractor" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.26387, -0.427969)
+
+[connection signal="item_collected" from="Head/PlayerInteractor" to="." method="_on_player_interactor_item_collected"]
 
 [editable path="Head/PlayerInteractor"]
