@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bce4jc2fhwx1x"]
-
-[ext_resource type="PackedScene" uid="uid://bdhvriu3fgtuj" path="res://Props/Meshes/tables/large_table.glb" id="1_xw8wb"]
-
-[node name="large_table" instance=ExtResource("1_xw8wb")]
