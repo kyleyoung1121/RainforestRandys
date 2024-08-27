@@ -77,6 +77,7 @@ func place_item(item):
 		item_instance.add_child(mesh_instance)
 		# Attach the item to the spawn point
 		available_spawn_point.add_child(item_instance)
+		item_instance.configure_item_name(item)
 		
 		# Slightly adjust transform
 		item_instance.position.x += randf_range(-item_position_variance, item_position_variance)
@@ -84,7 +85,7 @@ func place_item(item):
 		item_instance.rotation.y += randf_range(-deg_to_rad(item_rotation_variance), deg_to_rad(item_rotation_variance))
 		
 		# DEBUG
-		print("Item added! (" + item + ")" )
+		print("Item added! (" + ItemData.stylize_text(item) + ")" )
 
 
 func get_optional_items():

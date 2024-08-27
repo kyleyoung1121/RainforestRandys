@@ -38,5 +38,12 @@ var departments = {
 	'cups': 'cookware',
 	
 	'soda': 'cafe',
-	
 }
+
+
+func stylize_text(text: String) -> String:
+	# Replace underscores with spaces
+	var processed_text = text.replace("_", " ")
+	# Capitalize the first letter of each word
+	processed_text = processed_text.capitalize()
+	return processed_text

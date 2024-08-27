@@ -21,8 +21,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 # Track the player's shopping list items
 var shopping_list = [
-	"beer",  
-	"apple_juice",
+	#"beer",  
+	#"apple_juice",
 	"spaghetti", 
 	"tortilla",
 	"spaghetti",
@@ -31,21 +31,21 @@ var shopping_list = [
 	"schlamey",
 	"hot_sauce",
 	"tomato_soup",
-	"cups",
+	#"cups",
 	"ham",
 	"mak_and_cheese",
 	"canned_beans",
 	"instant_coffee",
-	"milk",
-	"toy_robot",
-	"red_wine",
-	"white_wine",
+	#"milk",
+	#"toy_robot",
+	#"red_wine",
+	#"white_wine",
 	"bacon",
 	"chicken_breast",
 	"hamburger_patties",
 	"hot_dogs",
-	"soda",
-	#"pizza_dough",
+	#"soda",
+	"pizza_dough",
 	"brownies"
 ]
 var items_collected = 0
@@ -53,10 +53,40 @@ var items_collected = 0
 # Get component references
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+@onready var phone = $Head/Camera3D/Phone
 
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	update_list()
+
+
+func update_list():
+	if shopping_list.size() <= 0:
+		phone.get_node("FirstItem").text = ""
+		phone.get_node("FirstItemDepartment").text = ""
+		phone.get_node("RemainingItems").text
+		phone.get_node("LineBreak").visible = false
+		phone.get_node("LineBreak2").visible = false
+		return
+	
+	phone.get_node("FirstItem").text = "- " + ItemData.stylize_text(shopping_list[0])
+	phone.get_node("FirstItemDepartment").text = "< " + ItemData.stylize_text(ItemData.departments[shopping_list[0]]) + " >"
+	
+	var build_remaining_items = ""
+	for remaining_item in shopping_list.slice(1,9):
+		build_remaining_items += "- " + ItemData.stylize_text(remaining_item) + "\n"
+	
+	phone.get_node("RemainingItems").text = build_remaining_items
+	var left_over_items = shopping_list.size() - 9
+	
+	if left_over_items <= 0:
+		phone.get_node("LineBreak").visible = false
+		phone.get_node("LineBreak2").visible = false
+	else:
+		phone.get_node("LineBreak").visible = true
+		phone.get_node("LineBreak2").visible = true
+		phone.get_node("LineBreak2").text = str(left_over_items) + " Additional Items"
 
 
 func _unhandled_input(event):
@@ -123,3 +153,8 @@ func _headbob(time) -> Vector3:
 	# Calculate bob left to right
 	head_position.x = cos(time * BOB_FREQUENCY / 2) * BOB_AMPLITUDE
 	return head_position
+
+
+func _on_player_interactor_item_collected(item_name):
+	shopping_list.erase(item_name)
+	update_list()
