@@ -178,7 +178,7 @@ size = Vector3(209.921, 9.94922, 1)
 script = ExtResource("1_oqjqo")
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("1_ccl2r")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 58.8248, 0.000327403, 8.99026)
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 57.7779, 0.000327403, -26.5118)
 
 [node name="Environment" type="Node3D" parent="."]
 
@@ -191,6 +191,7 @@ shadow_enabled = true
 
 [node name="Floor" type="Node3D" parent="."]
 transform = Transform3D(0.654854, 0, 0, 0, 0.654854, 0, 0, 0, 0.654854, 0, 0, 0)
+visible = false
 metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
@@ -554,7 +555,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.0168, 0, 73.6197)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8902, 0, -100.407)
 
 [node name="ShelfGroup015" type="Node3D" parent="Shelves/Grocery"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.55625, 0, 8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.55625, 0, 0)
 metadata/_edit_group_ = true
 
 [node name="shelf" parent="Shelves/Grocery/ShelfGroup015" instance=ExtResource("3_ugq15")]
@@ -570,7 +571,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.624, 0, 0.252)
 
 [node name="ShelfGroup016" type="Node3D" parent="Shelves/Grocery"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.55625, 0, 3)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.55625, 0, -3)
 metadata/_edit_group_ = true
 
 [node name="shelf" parent="Shelves/Grocery/ShelfGroup016" instance=ExtResource("3_ugq15")]
@@ -586,7 +587,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.624, 0, 0.252)
 
 [node name="ShelfGroup017" type="Node3D" parent="Shelves/Grocery"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.55625, 0, -2)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.55625, 0, -6)
 metadata/_edit_group_ = true
 
 [node name="shelf" parent="Shelves/Grocery/ShelfGroup017" instance=ExtResource("3_ugq15")]
@@ -602,7 +603,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.624, 0, 0.252)
 
 [node name="ShelfGroup018" type="Node3D" parent="Shelves/Grocery"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.55625, 0, -7)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.55625, 0, -9)
 metadata/_edit_group_ = true
 
 [node name="shelf" parent="Shelves/Grocery/ShelfGroup018" instance=ExtResource("3_ugq15")]
@@ -618,7 +619,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.624, 0, 0.252)
 
 [node name="ShelfGroup019" type="Node3D" parent="Shelves/Grocery"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.55625, 0, -12)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.55625, 0, -12)
 metadata/_edit_group_ = true
 
 [node name="shelf" parent="Shelves/Grocery/ShelfGroup019" instance=ExtResource("3_ugq15")]
@@ -650,7 +651,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.87
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -66.983, 0, -104.708)
 
 [node name="ShelfGroup015" type="Node3D" parent="Shelves/Drinks"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -9.53674e-07)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Drinks/ShelfGroup015" instance=ExtResource("3_ugq15")]
@@ -660,7 +661,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup016" type="Node3D" parent="Shelves/Drinks"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 3)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -3)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Drinks/ShelfGroup016" instance=ExtResource("3_ugq15")]
@@ -670,7 +671,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup017" type="Node3D" parent="Shelves/Drinks"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -2)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -6)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Drinks/ShelfGroup017" instance=ExtResource("3_ugq15")]
@@ -680,7 +681,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup018" type="Node3D" parent="Shelves/Drinks"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -7)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -9)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Drinks/ShelfGroup018" instance=ExtResource("3_ugq15")]
@@ -701,8 +702,28 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624
 
 [node name="Honey" type="Node3D" parent="Shelves"]
 
+[node name="ShelfGroup021" type="Node3D" parent="Shelves/Honey"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -44.27, 0, -80.502)
+metadata/_edit_group_ = true
+
+[node name="shelf2" parent="Shelves/Honey/ShelfGroup021" instance=ExtResource("3_ugq15")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624, 0, -0.252)
+
+[node name="shelf3" parent="Shelves/Honey/ShelfGroup021" instance=ExtResource("3_ugq15")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
+
+[node name="ShelfGroup020" type="Node3D" parent="Shelves/Honey"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -44.27, 0, -83.502)
+metadata/_edit_group_ = true
+
+[node name="shelf2" parent="Shelves/Honey/ShelfGroup020" instance=ExtResource("3_ugq15")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624, 0, -0.252)
+
+[node name="shelf3" parent="Shelves/Honey/ShelfGroup020" instance=ExtResource("3_ugq15")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
+
 [node name="ShelfGroup016" type="Node3D" parent="Shelves/Honey"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -44.2697, 0, -80.5023)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -44.2697, 0, -86.5023)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Honey/ShelfGroup016" instance=ExtResource("3_ugq15")]
@@ -712,7 +733,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup017" type="Node3D" parent="Shelves/Honey"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -44.2697, 0, -85.5023)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -44.2697, 0, -89.5023)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Honey/ShelfGroup017" instance=ExtResource("3_ugq15")]
@@ -722,7 +743,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup018" type="Node3D" parent="Shelves/Honey"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -44.2697, 0, -90.5023)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -44.2697, 0, -92.5023)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Honey/ShelfGroup018" instance=ExtResource("3_ugq15")]
@@ -742,9 +763,10 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="Toys" type="Node3D" parent="Shelves"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.45, 3.8147e-06, -21.079)
 
 [node name="ShelfGroup016" type="Node3D" parent="Shelves/Toys"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.4403, 0, -59.8836)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.4403, 0, -65.8836)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Toys/ShelfGroup016" instance=ExtResource("3_ugq15")]
@@ -754,7 +776,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup017" type="Node3D" parent="Shelves/Toys"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.4403, 0, -64.8836)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.4403, 0, -68.8836)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Toys/ShelfGroup017" instance=ExtResource("3_ugq15")]
@@ -764,7 +786,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup018" type="Node3D" parent="Shelves/Toys"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.4403, 0, -69.8836)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.4403, 0, -71.8836)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Toys/ShelfGroup018" instance=ExtResource("3_ugq15")]
@@ -787,7 +809,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.6066, 0, -77.1794)
 
 [node name="ShelfGroup015" type="Node3D" parent="Shelves/Organic"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 0)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Organic/ShelfGroup015" instance=ExtResource("3_ugq15")]
@@ -797,7 +819,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup016" type="Node3D" parent="Shelves/Organic"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 3)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -3)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Organic/ShelfGroup016" instance=ExtResource("3_ugq15")]
@@ -807,7 +829,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup017" type="Node3D" parent="Shelves/Organic"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -2)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -6)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Organic/ShelfGroup017" instance=ExtResource("3_ugq15")]
@@ -817,7 +839,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup018" type="Node3D" parent="Shelves/Organic"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -7)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -9)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Organic/ShelfGroup018" instance=ExtResource("3_ugq15")]
@@ -893,7 +915,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -54.8897, 0, -56.8702)
 
 [node name="ShelfGroup015" type="Node3D" parent="Shelves/Candy"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 4.76837e-07)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Candy/ShelfGroup015" instance=ExtResource("3_ugq15")]
@@ -903,7 +925,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup016" type="Node3D" parent="Shelves/Candy"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 3)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -3)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Candy/ShelfGroup016" instance=ExtResource("3_ugq15")]
@@ -913,7 +935,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup017" type="Node3D" parent="Shelves/Candy"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -2)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -6)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Candy/ShelfGroup017" instance=ExtResource("3_ugq15")]
@@ -923,7 +945,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup018" type="Node3D" parent="Shelves/Candy"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -7)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -9)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Candy/ShelfGroup018" instance=ExtResource("3_ugq15")]
@@ -956,7 +978,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup017" type="Node3D" parent="Shelves/Herbs"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -2)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 0)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Herbs/ShelfGroup017" instance=ExtResource("3_ugq15")]
@@ -966,7 +988,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup018" type="Node3D" parent="Shelves/Herbs"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -7)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -3)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Herbs/ShelfGroup018" instance=ExtResource("3_ugq15")]
@@ -976,7 +998,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.624, 0, 0.252)
 
 [node name="ShelfGroup019" type="Node3D" parent="Shelves/Herbs"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -12)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -6)
 metadata/_edit_group_ = true
 
 [node name="shelf2" parent="Shelves/Herbs/ShelfGroup019" instance=ExtResource("3_ugq15")]
@@ -1262,47 +1284,47 @@ transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -18.6757
 department = "drinks"
 
 [node name="ItemSpawn13" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -13.7372, 0.315093, -39.4758)
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -15.7372, 0.315093, -39.4758)
 department = "drinks"
 
 [node name="ItemSpawn14" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -13.7372, 0.315093, -43.8236)
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -15.7372, 0.315093, -43.8236)
 department = "drinks"
 
 [node name="ItemSpawn15" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 1.26355, 0.315093, -39.2123)
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -6.73645, 0.315093, -39.2123)
 department = "drinks"
 
 [node name="ItemSpawn16" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 1.26355, 0.315093, -42.3541)
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -6.73645, 0.315093, -42.3541)
 department = "drinks"
 
 [node name="ItemSpawn17" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 1.26355, 0.607808, -41.5533)
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -6.73645, 0.607808, -41.5533)
 department = "drinks"
 
 [node name="ItemSpawn18" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 1.26355, 0.607808, -44.7686)
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -6.73645, 0.607808, -44.7686)
 department = "drinks"
 
 [node name="ItemSpawn19" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71072, 0.607808, -44.1339)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.71072, 0.607808, -44.1339)
 department = "drinks"
 
 [node name="ItemSpawn20" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71666, 0.607808, -42.2553)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7167, 0.607808, -42.2553)
 department = "drinks"
 
 [node name="ItemSpawn21" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71666, 0.607808, -38.5392)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7167, 0.607808, -38.5392)
 department = "drinks"
 
 [node name="ItemSpawn22" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7263, 0.607808, -38.8183)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7263, 0.607808, -38.8183)
 department = "drinks"
 
 [node name="ItemSpawn23" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7263, 0.607808, -41.0946)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7263, 0.607808, -41.0946)
 department = "drinks"
 
 [node name="ItemSpawn24" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
@@ -1322,23 +1344,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.7573, 0.894529, -39.0834)
 department = "drinks"
 
 [node name="ItemSpawn28" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7841, 0.894529, -40.2334)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7841, 0.894529, -40.2334)
 department = "drinks"
 
 [node name="ItemSpawn29" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7841, 0.894529, -44.8233)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7841, 0.894529, -44.8233)
 department = "drinks"
 
 [node name="ItemSpawn30" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.70922, 0.894529, -44.8233)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7092, 0.894529, -44.8233)
 department = "drinks"
 
 [node name="ItemSpawn31" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7408, 0.894529, -42.7448)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.7408, 0.894529, -42.7448)
 department = "drinks"
 
 [node name="ItemSpawn32" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7408, 0.894529, -38.8195)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.7408, 0.894529, -38.8195)
 department = "drinks"
 
 [node name="ItemSpawn2" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
@@ -1358,19 +1380,19 @@ transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -19.2022
 department = "drinks"
 
 [node name="ItemSpawn6" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -14.1842, 0.315093, -39.5444)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -16.1842, 0.315093, -39.5444)
 department = "drinks"
 
 [node name="ItemSpawn7" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -14.1842, 0.315093, -42.39)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -16.1842, 0.315093, -42.39)
 department = "drinks"
 
 [node name="ItemSpawn33" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -14.1842, 0.604531, -44.3597)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -16.1842, 0.604531, -44.3597)
 department = "drinks"
 
 [node name="ItemSpawn34" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -14.1842, 0.604531, -40.7615)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -16.1842, 0.604531, -40.7615)
 department = "drinks"
 
 [node name="ItemSpawn35" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
@@ -1378,35 +1400,35 @@ transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -19.1515
 department = "drinks"
 
 [node name="ItemSpawn36" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -9.15146, 0.604531, -40.8453)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -13.1515, 0.604531, -40.8453)
 department = "drinks"
 
 [node name="ItemSpawn37" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -4.19823, 0.604531, -39.218)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -10.1982, 0.604531, -39.218)
 department = "drinks"
 
 [node name="ItemSpawn38" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0.793658, 0.604531, -41.2603)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -7.20634, 0.604531, -41.2603)
 department = "drinks"
 
 [node name="ItemSpawn8" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -9.21013, 0.315093, -44.8213)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -13.2101, 0.315093, -44.8213)
 department = "drinks"
 
 [node name="ItemSpawn9" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -4.16201, 0.315093, -44.0529)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -10.162, 0.315093, -44.0529)
 department = "drinks"
 
 [node name="ItemSpawn10" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -4.16201, 0.315093, -41.6006)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -10.162, 0.315093, -41.6006)
 department = "drinks"
 
 [node name="ItemSpawn11" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0.812753, 0.315093, -42.467)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -7.18725, 0.315093, -42.467)
 department = "drinks"
 
 [node name="ItemSpawn12" parent="ItemSpawns/Drinks" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0.812753, 0.315093, -38.5265)
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -7.18725, 0.315093, -38.5265)
 department = "drinks"
 
 [node name="Cookware" type="Node3D" parent="ItemSpawns"]
@@ -1562,6 +1584,819 @@ department = "cookware"
 [node name="ItemSpawn12" parent="ItemSpawns/Cookware" instance=ExtResource("16_hpxk5")]
 transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -26.962, 0.315093, 28.6223)
 department = "cookware"
+
+[node name="Pets" type="Node3D" parent="ItemSpawns"]
+
+[node name="ItemSpawn" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -20.2308, 0.315093, 28.4373)
+department = "pets"
+
+[node name="ItemSpawn13" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -15.2923, 0.315093, 27.673)
+department = "pets"
+
+[node name="ItemSpawn14" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -15.2923, 0.315093, 23.3252)
+department = "pets"
+
+[node name="ItemSpawn19" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.26575, 0.607808, 23.0149)
+department = "pets"
+
+[node name="ItemSpawn20" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.2718, 0.607808, 24.8935)
+department = "pets"
+
+[node name="ItemSpawn21" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.2718, 0.607808, 28.6096)
+department = "pets"
+
+[node name="ItemSpawn22" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2813, 0.607808, 28.3305)
+department = "pets"
+
+[node name="ItemSpawn23" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2813, 0.607808, 26.0542)
+department = "pets"
+
+[node name="ItemSpawn24" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.3124, 0.607808, 27.2884)
+department = "pets"
+
+[node name="ItemSpawn25" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.3124, 0.607808, 23.6368)
+department = "pets"
+
+[node name="ItemSpawn26" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.3124, 0.894529, 25.641)
+department = "pets"
+
+[node name="ItemSpawn27" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.3124, 0.894529, 28.0654)
+department = "pets"
+
+[node name="ItemSpawn28" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3391, 0.894529, 26.9154)
+department = "pets"
+
+[node name="ItemSpawn29" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3391, 0.894529, 22.3255)
+department = "pets"
+
+[node name="ItemSpawn30" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.2643, 0.894529, 22.3255)
+department = "pets"
+
+[node name="ItemSpawn31" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.29585, 0.894529, 24.404)
+department = "pets"
+
+[node name="ItemSpawn32" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.29585, 0.894529, 28.3293)
+department = "pets"
+
+[node name="ItemSpawn2" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -20.2308, 0.315093, 25.1269)
+department = "pets"
+
+[node name="ItemSpawn3" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -20.2308, 0.315093, 22.1944)
+department = "pets"
+
+[node name="ItemSpawn4" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -20.7573, 0.315093, 22.6145)
+department = "pets"
+
+[node name="ItemSpawn5" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -20.7573, 0.315093, 26.9667)
+department = "pets"
+
+[node name="ItemSpawn6" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -15.7392, 0.315093, 27.6044)
+department = "pets"
+
+[node name="ItemSpawn7" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -15.7392, 0.315093, 24.7588)
+department = "pets"
+
+[node name="ItemSpawn33" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -15.7392, 0.604531, 22.7891)
+department = "pets"
+
+[node name="ItemSpawn34" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -15.7392, 0.604531, 26.3873)
+department = "pets"
+
+[node name="ItemSpawn35" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -20.7066, 0.604531, 27.9309)
+department = "pets"
+
+[node name="ItemSpawn36" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -10.7065, 0.604531, 26.3035)
+department = "pets"
+
+[node name="ItemSpawn37" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -5.75325, 0.604531, 27.9308)
+department = "pets"
+
+[node name="ItemSpawn8" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -10.7652, 0.315093, 22.3275)
+department = "pets"
+
+[node name="ItemSpawn9" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -5.71705, 0.315093, 23.0959)
+department = "pets"
+
+[node name="ItemSpawn10" parent="ItemSpawns/Pets" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -5.71705, 0.315093, 25.5482)
+department = "pets"
+
+[node name="Health" type="Node3D" parent="ItemSpawns"]
+
+[node name="ItemSpawn" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 0.722952, 0.315093, 28.4373)
+department = "health"
+
+[node name="ItemSpawn13" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 5.66145, 0.315093, 27.673)
+department = "health"
+
+[node name="ItemSpawn14" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 5.66145, 0.315093, 23.3252)
+department = "health"
+
+[node name="ItemSpawn19" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.688, 0.607808, 23.0149)
+department = "health"
+
+[node name="ItemSpawn20" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.682, 0.607808, 24.8935)
+department = "health"
+
+[node name="ItemSpawn21" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.682, 0.607808, 28.6096)
+department = "health"
+
+[node name="ItemSpawn22" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.67235, 0.607808, 28.3305)
+department = "health"
+
+[node name="ItemSpawn23" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.67235, 0.607808, 26.0542)
+department = "health"
+
+[node name="ItemSpawn24" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.641352, 0.607808, 27.2884)
+department = "health"
+
+[node name="ItemSpawn25" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.641352, 0.607808, 23.6368)
+department = "health"
+
+[node name="ItemSpawn26" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.641352, 0.894529, 25.641)
+department = "health"
+
+[node name="ItemSpawn27" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.641352, 0.894529, 28.0654)
+department = "health"
+
+[node name="ItemSpawn28" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.61455, 0.894529, 26.9154)
+department = "health"
+
+[node name="ItemSpawn29" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.61455, 0.894529, 22.3255)
+department = "health"
+
+[node name="ItemSpawn30" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6895, 0.894529, 22.3255)
+department = "health"
+
+[node name="ItemSpawn31" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6579, 0.894529, 24.404)
+department = "health"
+
+[node name="ItemSpawn32" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6579, 0.894529, 28.3293)
+department = "health"
+
+[node name="ItemSpawn2" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 0.722952, 0.315093, 25.1269)
+department = "health"
+
+[node name="ItemSpawn3" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 0.722952, 0.315093, 22.1944)
+department = "health"
+
+[node name="ItemSpawn4" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0.196451, 0.315093, 22.6145)
+department = "health"
+
+[node name="ItemSpawn5" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0.196451, 0.315093, 26.9667)
+department = "health"
+
+[node name="ItemSpawn6" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 5.21445, 0.315093, 27.6044)
+department = "health"
+
+[node name="ItemSpawn7" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 5.21445, 0.315093, 24.7588)
+department = "health"
+
+[node name="ItemSpawn33" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 5.21445, 0.604531, 22.7891)
+department = "health"
+
+[node name="ItemSpawn34" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 5.21445, 0.604531, 26.3873)
+department = "health"
+
+[node name="ItemSpawn35" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0.247152, 0.604531, 27.9309)
+department = "health"
+
+[node name="ItemSpawn36" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 10.2472, 0.604531, 26.3035)
+department = "health"
+
+[node name="ItemSpawn37" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 15.2005, 0.604531, 27.9308)
+department = "health"
+
+[node name="ItemSpawn8" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 10.1886, 0.315093, 22.3275)
+department = "health"
+
+[node name="ItemSpawn9" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 15.2367, 0.315093, 23.0959)
+department = "health"
+
+[node name="ItemSpawn10" parent="ItemSpawns/Health" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 15.2367, 0.315093, 25.5482)
+department = "health"
+
+[node name="Candy" type="Node3D" parent="ItemSpawns"]
+
+[node name="ItemSpawn" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -6.58417, 0.315093, 9.25996)
+department = "candy"
+
+[node name="ItemSpawn13" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -3.64567, 0.315093, 8.49566)
+department = "candy"
+
+[node name="ItemSpawn14" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -3.64567, 0.315093, 4.14786)
+department = "candy"
+
+[node name="ItemSpawn15" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 5.3551, 0.315093, 8.75916)
+department = "candy"
+
+[node name="ItemSpawn16" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 5.3551, 0.315093, 5.61736)
+department = "candy"
+
+[node name="ItemSpawn17" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 5.3551, 0.607808, 6.41816)
+department = "candy"
+
+[node name="ItemSpawn18" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 5.3551, 0.607808, 3.20286)
+department = "candy"
+
+[node name="ItemSpawn19" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38083, 0.607808, 3.83756)
+department = "candy"
+
+[node name="ItemSpawn20" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.62517, 0.607808, 5.71616)
+department = "candy"
+
+[node name="ItemSpawn21" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.62517, 0.607808, 9.43226)
+department = "candy"
+
+[node name="ItemSpawn22" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63477, 0.607808, 9.15316)
+department = "candy"
+
+[node name="ItemSpawn23" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63477, 0.607808, 6.87686)
+department = "candy"
+
+[node name="ItemSpawn24" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.66577, 0.607808, 8.11106)
+department = "candy"
+
+[node name="ItemSpawn25" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.66577, 0.607808, 4.45946)
+department = "candy"
+
+[node name="ItemSpawn26" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.66577, 0.894529, 6.46366)
+department = "candy"
+
+[node name="ItemSpawn27" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.66577, 0.894529, 8.88806)
+department = "candy"
+
+[node name="ItemSpawn28" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.69257, 0.894529, 7.73806)
+department = "candy"
+
+[node name="ItemSpawn29" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.69257, 0.894529, 3.14816)
+department = "candy"
+
+[node name="ItemSpawn30" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.61767, 0.894529, 3.14816)
+department = "candy"
+
+[node name="ItemSpawn31" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.35073, 0.894529, 5.22666)
+department = "candy"
+
+[node name="ItemSpawn32" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.35073, 0.894529, 9.15196)
+department = "candy"
+
+[node name="ItemSpawn2" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -6.58417, 0.315093, 5.94956)
+department = "candy"
+
+[node name="ItemSpawn3" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -6.58417, 0.315093, 3.01706)
+department = "candy"
+
+[node name="ItemSpawn4" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -7.11067, 0.315093, 3.43716)
+department = "candy"
+
+[node name="ItemSpawn5" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -7.11067, 0.315093, 7.78936)
+department = "candy"
+
+[node name="ItemSpawn6" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -4.09267, 0.315093, 8.42706)
+department = "candy"
+
+[node name="ItemSpawn7" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -4.09267, 0.315093, 5.58146)
+department = "candy"
+
+[node name="ItemSpawn33" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -4.09267, 0.604531, 3.61176)
+department = "candy"
+
+[node name="ItemSpawn34" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -4.09267, 0.604531, 7.20996)
+department = "candy"
+
+[node name="ItemSpawn35" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -7.05997, 0.604531, 8.75356)
+department = "candy"
+
+[node name="ItemSpawn36" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -1.05997, 0.604531, 7.12616)
+department = "candy"
+
+[node name="ItemSpawn37" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 1.89333, 0.604531, 8.75346)
+department = "candy"
+
+[node name="ItemSpawn38" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 4.8852, 0.604531, 6.71116)
+department = "candy"
+
+[node name="ItemSpawn8" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -1.11857, 0.315093, 3.15016)
+department = "candy"
+
+[node name="ItemSpawn9" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 1.92953, 0.315093, 3.91856)
+department = "candy"
+
+[node name="ItemSpawn10" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 1.92953, 0.315093, 6.37086)
+department = "candy"
+
+[node name="ItemSpawn11" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 4.9043, 0.315093, 5.50446)
+department = "candy"
+
+[node name="ItemSpawn12" parent="ItemSpawns/Candy" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 4.9043, 0.315093, 9.44496)
+department = "candy"
+
+[node name="Organic" type="Node3D" parent="ItemSpawns"]
+
+[node name="ItemSpawn" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 32.6874, 0.315095, -10.9066)
+department = "organic"
+
+[node name="ItemSpawn13" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 35.6259, 0.315095, -11.6709)
+department = "organic"
+
+[node name="ItemSpawn14" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 35.6259, 0.315095, -16.0187)
+department = "organic"
+
+[node name="ItemSpawn15" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 44.6267, 0.315095, -11.4074)
+department = "organic"
+
+[node name="ItemSpawn16" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 44.6267, 0.315095, -14.5492)
+department = "organic"
+
+[node name="ItemSpawn17" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 44.6267, 0.60781, -13.7484)
+department = "organic"
+
+[node name="ItemSpawn18" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 44.6267, 0.60781, -16.9637)
+department = "organic"
+
+[node name="ItemSpawn19" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.6524, 0.60781, -16.329)
+department = "organic"
+
+[node name="ItemSpawn20" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.6464, 0.60781, -14.4504)
+department = "organic"
+
+[node name="ItemSpawn21" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.6464, 0.60781, -10.7343)
+department = "organic"
+
+[node name="ItemSpawn22" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6368, 0.60781, -11.0134)
+department = "organic"
+
+[node name="ItemSpawn23" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6368, 0.60781, -13.2897)
+department = "organic"
+
+[node name="ItemSpawn24" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6058, 0.60781, -12.0555)
+department = "organic"
+
+[node name="ItemSpawn25" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6058, 0.60781, -15.7071)
+department = "organic"
+
+[node name="ItemSpawn26" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6058, 0.894531, -13.7029)
+department = "organic"
+
+[node name="ItemSpawn27" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6058, 0.894531, -11.2785)
+department = "organic"
+
+[node name="ItemSpawn28" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.579, 0.894531, -12.4285)
+department = "organic"
+
+[node name="ItemSpawn29" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.579, 0.894531, -17.0184)
+department = "organic"
+
+[node name="ItemSpawn30" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.6539, 0.894531, -17.0184)
+department = "organic"
+
+[node name="ItemSpawn31" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.6223, 0.894531, -14.9399)
+department = "organic"
+
+[node name="ItemSpawn32" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.6223, 0.894531, -11.0146)
+department = "organic"
+
+[node name="ItemSpawn2" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 32.6874, 0.315095, -14.217)
+department = "organic"
+
+[node name="ItemSpawn3" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 32.6874, 0.315095, -17.1495)
+department = "organic"
+
+[node name="ItemSpawn4" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 32.1609, 0.315095, -16.7294)
+department = "organic"
+
+[node name="ItemSpawn5" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 32.1609, 0.315095, -12.3772)
+department = "organic"
+
+[node name="ItemSpawn6" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 35.1789, 0.315095, -11.7395)
+department = "organic"
+
+[node name="ItemSpawn7" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 35.1789, 0.315095, -14.5851)
+department = "organic"
+
+[node name="ItemSpawn33" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 35.1789, 0.604533, -16.5548)
+department = "organic"
+
+[node name="ItemSpawn34" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 35.1789, 0.604533, -12.9566)
+department = "organic"
+
+[node name="ItemSpawn35" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 32.2116, 0.604533, -11.413)
+department = "organic"
+
+[node name="ItemSpawn36" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 38.2116, 0.604533, -13.0404)
+department = "organic"
+
+[node name="ItemSpawn37" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 41.1649, 0.604533, -11.4131)
+department = "organic"
+
+[node name="ItemSpawn38" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 44.1568, 0.604533, -13.4554)
+department = "organic"
+
+[node name="ItemSpawn8" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 38.153, 0.315095, -17.0164)
+department = "organic"
+
+[node name="ItemSpawn9" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 41.2011, 0.315095, -16.248)
+department = "organic"
+
+[node name="ItemSpawn10" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 41.2011, 0.315095, -13.7957)
+department = "organic"
+
+[node name="ItemSpawn11" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 44.1759, 0.315095, -14.6621)
+department = "organic"
+
+[node name="ItemSpawn12" parent="ItemSpawns/Organic" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 44.1759, 0.315095, -10.7216)
+department = "organic"
+
+[node name="Herbs" type="Node3D" parent="ItemSpawns"]
+
+[node name="ItemSpawn" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 27.2358, 0.315093, 9.25996)
+department = "herbs"
+
+[node name="ItemSpawn13" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 30.1743, 0.315093, 8.49566)
+department = "herbs"
+
+[node name="ItemSpawn14" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 30.1743, 0.315093, 4.14786)
+department = "herbs"
+
+[node name="ItemSpawn19" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.2008, 0.607808, 3.83756)
+department = "herbs"
+
+[node name="ItemSpawn20" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.1948, 0.607808, 5.71616)
+department = "herbs"
+
+[node name="ItemSpawn21" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.1948, 0.607808, 9.43226)
+department = "herbs"
+
+[node name="ItemSpawn22" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.1852, 0.607808, 9.15316)
+department = "herbs"
+
+[node name="ItemSpawn23" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.1852, 0.607808, 6.87686)
+department = "herbs"
+
+[node name="ItemSpawn24" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1542, 0.607808, 8.11106)
+department = "herbs"
+
+[node name="ItemSpawn25" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1542, 0.607808, 4.45946)
+department = "herbs"
+
+[node name="ItemSpawn26" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1542, 0.894529, 6.46366)
+department = "herbs"
+
+[node name="ItemSpawn27" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1542, 0.894529, 8.88806)
+department = "herbs"
+
+[node name="ItemSpawn28" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.1274, 0.894529, 7.73806)
+department = "herbs"
+
+[node name="ItemSpawn29" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.1274, 0.894529, 3.14816)
+department = "herbs"
+
+[node name="ItemSpawn30" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.2023, 0.894529, 3.14816)
+department = "herbs"
+
+[node name="ItemSpawn31" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.1707, 0.894529, 5.22666)
+department = "herbs"
+
+[node name="ItemSpawn32" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.1707, 0.894529, 9.15196)
+department = "herbs"
+
+[node name="ItemSpawn2" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 27.2358, 0.315093, 5.94956)
+department = "herbs"
+
+[node name="ItemSpawn3" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, 27.2358, 0.315093, 3.01706)
+department = "herbs"
+
+[node name="ItemSpawn4" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 26.7093, 0.315093, 3.43716)
+department = "herbs"
+
+[node name="ItemSpawn5" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 26.7093, 0.315093, 7.78936)
+department = "herbs"
+
+[node name="ItemSpawn6" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 29.7273, 0.315093, 8.42706)
+department = "herbs"
+
+[node name="ItemSpawn7" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 29.7273, 0.315093, 5.58146)
+department = "herbs"
+
+[node name="ItemSpawn33" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 29.7273, 0.604531, 3.61176)
+department = "herbs"
+
+[node name="ItemSpawn34" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 29.7273, 0.604531, 7.20996)
+department = "herbs"
+
+[node name="ItemSpawn35" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 26.76, 0.604531, 8.75356)
+department = "herbs"
+
+[node name="ItemSpawn36" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 32.76, 0.604531, 7.12616)
+department = "herbs"
+
+[node name="ItemSpawn37" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 35.7133, 0.604531, 8.75346)
+department = "herbs"
+
+[node name="ItemSpawn8" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 32.7014, 0.315093, 3.15016)
+department = "herbs"
+
+[node name="ItemSpawn9" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 35.7495, 0.315093, 3.91856)
+department = "herbs"
+
+[node name="ItemSpawn10" parent="ItemSpawns/Herbs" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 35.7495, 0.315093, 6.37086)
+department = "herbs"
+
+[node name="Toys" type="Node3D" parent="ItemSpawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.45, 3.8147e-06, -21.079)
+
+[node name="ItemSpawn" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 44.483, 0.315093, -1.00516)
+department = "toys"
+
+[node name="ItemSpawn13" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 45.2473, 0.315093, 1.93334)
+department = "toys"
+
+[node name="ItemSpawn14" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 49.5951, 0.315093, 1.93334)
+department = "toys"
+
+[node name="ItemSpawn19" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 49.9054, 0.607808, 7.9598)
+department = "toys"
+
+[node name="ItemSpawn20" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48.0268, 0.607808, 4.95384)
+department = "toys"
+
+[node name="ItemSpawn21" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44.3107, 0.607808, 4.95384)
+department = "toys"
+
+[node name="ItemSpawn22" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44.5898, 0.607808, 1.94424)
+department = "toys"
+
+[node name="ItemSpawn23" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.8661, 0.607808, 1.94424)
+department = "toys"
+
+[node name="ItemSpawn24" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 45.6319, 0.607808, -1.08676)
+department = "toys"
+
+[node name="ItemSpawn25" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 49.2835, 0.607808, -1.08676)
+department = "toys"
+
+[node name="ItemSpawn26" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 47.2793, 0.894529, -1.08676)
+department = "toys"
+
+[node name="ItemSpawn27" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44.8549, 0.894529, -1.08676)
+department = "toys"
+
+[node name="ItemSpawn28" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.0049, 0.894529, 1.88644)
+department = "toys"
+
+[node name="ItemSpawn29" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 50.5948, 0.894529, 1.88644)
+department = "toys"
+
+[node name="ItemSpawn30" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 50.5948, 0.894529, 4.96134)
+department = "toys"
+
+[node name="ItemSpawn31" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48.5163, 0.894529, 7.9297)
+department = "toys"
+
+[node name="ItemSpawn32" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44.591, 0.894529, 7.9297)
+department = "toys"
+
+[node name="ItemSpawn2" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 47.7934, 0.315093, -1.00516)
+department = "toys"
+
+[node name="ItemSpawn3" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 50.7259, 0.315093, -1.00516)
+department = "toys"
+
+[node name="ItemSpawn4" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 50.3058, 0.315093, -1.53166)
+department = "toys"
+
+[node name="ItemSpawn5" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 45.9536, 0.315093, -1.53166)
+department = "toys"
+
+[node name="ItemSpawn6" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 45.3159, 0.315093, 1.48634)
+department = "toys"
+
+[node name="ItemSpawn7" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 48.1615, 0.315093, 1.48634)
+department = "toys"
+
+[node name="ItemSpawn33" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 50.1312, 0.604531, 1.48634)
+department = "toys"
+
+[node name="ItemSpawn34" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 46.533, 0.604531, 1.48634)
+department = "toys"
+
+[node name="ItemSpawn35" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 44.9894, 0.604531, -1.48096)
+department = "toys"
+
+[node name="ItemSpawn36" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 46.6168, 0.604531, 4.51904)
+department = "toys"
+
+[node name="ItemSpawn37" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 44.9895, 0.604531, 7.4723)
+department = "toys"
+
+[node name="ItemSpawn8" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 50.5928, 0.315093, 4.46044)
+department = "toys"
+
+[node name="ItemSpawn9" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 49.8244, 0.315093, 7.5085)
+department = "toys"
+
+[node name="ItemSpawn10" parent="ItemSpawns/Toys" instance=ExtResource("16_hpxk5")]
+transform = Transform3D(-4.56956e-08, 0, 1, 0, 1, 0, -1, 0, -4.56956e-08, 47.3721, 0.315093, 7.5085)
+department = "toys"
 
 [node name="Bakery" type="Node3D" parent="ItemSpawns"]
 
@@ -1759,174 +2594,174 @@ department = "wine"
 [node name="Bread" type="Node3D" parent="ItemSpawns"]
 
 [node name="ItemSpawn" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 61.7826, 0.315392, -18.9857)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 65.7826, 0.315392, -26.9857)
 department = "bread"
 
 [node name="ItemSpawn2" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 64.4038, 0.315392, -18.9857)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 68.4038, 0.315392, -26.9857)
 department = "bread"
 
 [node name="ItemSpawn3" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 70.3788, 0.315392, -18.9857)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 74.3788, 0.315392, -26.9857)
 department = "bread"
 
 [node name="ItemSpawn4" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 75.092, 0.315392, -18.9857)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 79.092, 0.315392, -26.9857)
 department = "bread"
 
 [node name="ItemSpawn5" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 73.6643, 0.605, -18.9859)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 77.6643, 0.605, -26.9859)
 department = "bread"
 
 [node name="ItemSpawn6" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 68.7763, 0.605, -18.9859)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 72.7763, 0.605, -26.9859)
 department = "bread"
 
 [node name="ItemSpawn7" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 62.9391, 0.605, -18.9859)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 66.9391, 0.605, -26.9859)
 department = "bread"
 
 [node name="ItemSpawn8" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 65.8224, 0.897471, -18.9859)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 69.8224, 0.897471, -26.9859)
 department = "bread"
 
 [node name="ItemSpawn9" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 70.7601, 0.897471, -18.9859)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 74.7601, 0.897471, -26.9859)
 department = "bread"
 
 [node name="ItemSpawn10" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 74.1168, 0.897471, -18.9859)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 78.1168, 0.897471, -26.9859)
 department = "bread"
 
 [node name="ItemSpawn12" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 71.1043, 0.897471, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 75.1043, 0.897471, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn13" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 69.3622, 0.897471, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 73.3622, 0.897471, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn14" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 63.1138, 0.897471, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 67.1138, 0.897471, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn15" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 61.6639, 0.606151, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 65.6639, 0.606151, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn16" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 63.8842, 0.606151, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 67.8842, 0.606151, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn17" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 73.9047, 0.606151, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 77.9047, 0.606151, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn18" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 67.8202, 0.606151, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 71.8202, 0.606151, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn19" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 72.4845, 0.317012, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 76.4845, 0.317012, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn20" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 66.5963, 0.317012, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 70.5963, 0.317012, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn21" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 62.9152, 0.317012, -23.5682)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 66.9152, 0.317012, -29.5682)
 department = "bread"
 
 [node name="ItemSpawn11" parent="ItemSpawns/Bread" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 74.7259, 0.897, -23.465)
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 78.7259, 0.897, -29.465)
 department = "bread"
 
 [node name="Canned" type="Node3D" parent="ItemSpawns"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.915)
 
 [node name="ItemSpawn" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 61.8918, 0.315392, -19.0746)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 65.8918, 0.315392, -25.0746)
 department = "canned"
 
 [node name="ItemSpawn2" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 64.513, 0.315392, -19.0746)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 68.513, 0.315392, -25.0746)
 department = "canned"
 
 [node name="ItemSpawn3" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 70.488, 0.315392, -19.0746)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 74.488, 0.315392, -25.0746)
 department = "canned"
 
 [node name="ItemSpawn4" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 75.2012, 0.315392, -19.0746)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 79.2012, 0.315392, -25.0746)
 department = "canned"
 
 [node name="ItemSpawn5" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 73.7735, 0.605, -19.0748)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 77.7735, 0.605, -25.0748)
 department = "canned"
 
 [node name="ItemSpawn6" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 68.8854, 0.605, -19.0748)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 72.8854, 0.605, -25.0748)
 department = "canned"
 
 [node name="ItemSpawn7" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 63.0483, 0.605, -19.0748)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 67.0483, 0.605, -25.0748)
 department = "canned"
 
 [node name="ItemSpawn8" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 65.9316, 0.897471, -19.0748)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 69.9316, 0.897471, -25.0748)
 department = "canned"
 
 [node name="ItemSpawn9" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 70.8693, 0.897471, -19.0748)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 74.8693, 0.897471, -25.0748)
 department = "canned"
 
 [node name="ItemSpawn10" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 74.226, 0.897471, -19.0748)
+transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, -1, 0, -1.19209e-07, 78.226, 0.897471, -25.0748)
 department = "canned"
 
 [node name="ItemSpawn11" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 74.7963, 0.897471, -23.5542)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 78.7963, 0.897471, -27.5542)
 department = "canned"
 
 [node name="ItemSpawn12" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 71.2135, 0.897471, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 75.2135, 0.897471, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn13" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 69.4714, 0.897471, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 73.4714, 0.897471, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn14" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 63.223, 0.897471, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 67.223, 0.897471, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn15" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 61.7731, 0.606151, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 65.7731, 0.606151, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn16" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 63.9934, 0.606151, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 67.9934, 0.606151, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn17" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 74.0139, 0.606151, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 78.0139, 0.606151, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn18" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 67.9294, 0.606151, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 71.9294, 0.606151, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn19" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 72.5936, 0.317012, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 76.5936, 0.317012, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn20" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 66.7055, 0.317012, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 70.7055, 0.317012, -27.6493)
 department = "canned"
 
 [node name="ItemSpawn21" parent="ItemSpawns/Canned" instance=ExtResource("16_hpxk5")]
-transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 63.0243, 0.317012, -23.6493)
+transform = Transform3D(3.17865e-08, 0, -1, 0, 1, 0, 1, 0, 3.17865e-08, 67.0243, 0.317012, -27.6493)
 department = "canned"
 
 [node name="Meat" type="Node3D" parent="ItemSpawns"]
@@ -2329,13 +3164,13 @@ text = "Drinks"
 font_size = 45
 
 [node name="BreadLabel" type="Label3D" parent="EditorHints"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 73.8516, 4.52504, -21.4595)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 77.8516, 4.52504, -27.4595)
 pixel_size = 0.03
 text = "Bread"
 font_size = 45
 
 [node name="CannedLabel" type="Label3D" parent="EditorHints"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 73.7991, 2.88207, -26.2227)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 77.7991, 2.88207, -30.2227)
 pixel_size = 0.03
 text = "Canned"
 font_size = 45
