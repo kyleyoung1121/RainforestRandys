@@ -2,9 +2,9 @@ extends CharacterBody3D
 
 
 var speed
-const SPRINT_SPEED = 5.5
-const WALK_SPEED = 3.5
-const JUMP_VELOCITY = 3.0
+const SPRINT_SPEED = 4
+const WALK_SPEED = 2.5
+const JUMP_VELOCITY = 3.5
 const SENSITIVITY = 0.0012
 
 # Bob Variables
@@ -13,7 +13,7 @@ const BOB_AMPLITUDE = 0.02
 var bob_progress = 0.0
 
 # FOV Variables
-const BASE_FOV = 80.0
+const BASE_FOV = 75.0
 const FOV_CHANGE = 1.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -23,13 +23,12 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var shopping_list = [
 	#"beer",  
 	#"apple_juice",
-	"spaghetti", 
-	"tortilla",
-	"spaghetti",
+	#"spaghetti", 
+	#"tortilla",
 	#"apple_pie",
-	"instant_noodles",
-	"schlamey",
-	"hot_sauce",
+	#"instant_noodles",
+	#"schlamey",
+	#"hot_sauce",
 	"tomato_soup",
 	#"cups",
 	"ham",

@@ -4,7 +4,7 @@ var is_collected: bool = false
 var item_name = "item"
 
 @onready var interactable_component = $Interactable
-
+@onready var light = $OmniLight3D
 
 func _ready():
 	self.visible = true
@@ -13,6 +13,13 @@ func _ready():
 func configure_item_name(given_item_name):
 	item_name = given_item_name
 	interactable_component.item_name = given_item_name
+
+
+func set_lighting(is_lit):
+	if is_lit:
+		light.light_energy = 1
+	else:
+		light.light_energy = 0
 
 
 func _on_interactable_interacted(interactor):

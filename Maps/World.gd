@@ -24,15 +24,15 @@ func populate_shelves():
 	# Add at least two of every item on the player's list
 	for item in player.shopping_list:
 		for i in range(randi_range(2,4)):
-			place_item(item)
+			place_item(item, true)
 	
 	# Add 0, 1, or 2 of each other item, to help fill the shelves
 	for optional_item in get_optional_items():
 		for i in range(randi_range(0,2)):
-			place_item(optional_item)
+			place_item(optional_item, false)
 
 
-func place_item(item):
+func place_item(item, lit):
 	# Determine which department this item is in
 	var item_department = ItemData.departments[item]
 	
@@ -78,6 +78,9 @@ func place_item(item):
 		# Attach the item to the spawn point
 		available_spawn_point.add_child(item_instance)
 		item_instance.configure_item_name(item)
+		
+		if lit:
+			item_instance.set_lighting(lit)
 		
 		# Slightly adjust transform
 		item_instance.position.x += randf_range(-item_position_variance, item_position_variance)
