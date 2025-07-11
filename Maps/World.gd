@@ -1,6 +1,7 @@
 extends Node3D
 
 @onready var backup_spawn = $ItemSpawns/BackUpSpawn
+@onready var editor_view_only = $EditorViewOnly
 
 var item_scene = preload("res://Props/Item.tscn")
 var item_spawns = {}
@@ -14,6 +15,7 @@ var item_rotation_variance = 15
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	editor_view_only.visible = false
 	if get_tree().get_nodes_in_group("Player"):
 		player = get_tree().get_nodes_in_group("Player")[0]
 	build_item_spawns_dictionary()

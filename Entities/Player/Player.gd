@@ -4,8 +4,9 @@ extends CharacterBody3D
 var speed
 const SPRINT_SPEED = 4
 const WALK_SPEED = 2.5
-const JUMP_VELOCITY = 3.5
 const SENSITIVITY = 0.0012
+const FLASHLIGHT_BRIGHTNESS = 0.6
+var flashlight_on = true
 
 # Bob Variables
 const BOB_FREQUENCY = 3.0
@@ -53,10 +54,12 @@ var items_collected = 0
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var phone = $Head/Camera3D/Phone
+@onready var flashlight = $Head/Camera3D/Flashlight
 
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	flashlight.light_energy = FLASHLIGHT_BRIGHTNESS
 	update_list()
 
 
@@ -102,10 +105,14 @@ func _physics_process(delta):
 	# Apply gravity
 	if not is_on_floor():
 		velocity.y -= gravity * delta
-
-	# Handle jump
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	
+	if Input.is_action_just_pressed("flashlight"):
+		if flashlight_on:
+			flashlight_on = false
+			flashlight.light_energy = 0
+		else:
+			flashlight_on = true
+			flashlight.light_energy = FLASHLIGHT_BRIGHTNESS
 	
 	# Handle sprint
 	# TODO: add stamina

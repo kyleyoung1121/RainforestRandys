@@ -17,7 +17,9 @@ shape = SubResource("BoxShape3D_7yyqh")
 
 [node name="OmniLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(0.975534, 1.06942e-09, 0.219846, -0.219846, 9.60978e-09, 0.975534, -1.06942e-09, -1, 9.60978e-09, 0.077, 0.261, 0)
-light_color = Color(0.79, 0.566167, 0, 1)
+light_color = Color(0.660874, 0.471245, 0, 1)
+light_energy = 0.01
+light_indirect_energy = 0.01
 spot_range = 0.5
 spot_angle = 50.0
 
