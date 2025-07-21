@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-
+var paused = false
 var speed
 const SPRINT_SPEED = 4
 const WALK_SPEED = 2.5
@@ -92,6 +92,8 @@ func update_list():
 
 
 func _unhandled_input(event):
+	if paused:
+		return
 	# Check if the mouse has moved
 	if event is InputEventMouseMotion:
 		# Move the camera accordingly
@@ -102,11 +104,22 @@ func _unhandled_input(event):
 
 
 func _physics_process(delta):
+	
+	if Input.is_action_pressed("pause"):
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE) 
+			paused = true
+			Engine.time_scale = 0.0001
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			paused = false
+			Engine.time_scale = 1
+	
 	# Apply gravity
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	
-	if Input.is_action_just_pressed("flashlight"):
+	if Input.is_action_just_pressed("flashlight") and not paused:
 		if flashlight_on:
 			flashlight_on = false
 			flashlight.light_energy = 0
@@ -117,28 +130,29 @@ func _physics_process(delta):
 	# Handle sprint
 	# TODO: add stamina
 	# TODO: allow toggle sprint, so they dont have to hold it the whole time
-	if Input.is_action_pressed("sprint"):
+	if Input.is_action_pressed("sprint") and not paused:
 		speed = SPRINT_SPEED
 	else:
 		speed = WALK_SPEED
 	
 	# Get the input direction and handle the movement/deceleration.
-	var input_dir = Input.get_vector("left", "right", "forward", "backward")
-	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	if not paused:
+		var input_dir = Input.get_vector("left", "right", "forward", "backward")
+		var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	
-	# Allow the player to move the character if they are on the ground
-	if is_on_floor():
-		if direction:
-			velocity.x = direction.x * speed
-			velocity.z = direction.z * speed
+		# Allow the player to move the character if they are on the ground
+		if is_on_floor():
+			if direction:
+				velocity.x = direction.x * speed
+				velocity.z = direction.z * speed
+			else:
+				velocity.x = 0
+				velocity.z = 0
+			
+		# If the player is mid-air, allow partial control
 		else:
-			velocity.x = 0
-			velocity.z = 0
-		
-	# If the player is mid-air, allow partial control
-	else:
-		velocity.x = lerp(velocity.x, direction.x * speed, delta * 4)
-		velocity.z = lerp(velocity.z, direction.z * speed, delta * 4)
+			velocity.x = lerp(velocity.x, direction.x * speed, delta * 4)
+			velocity.z = lerp(velocity.z, direction.z * speed, delta * 4)
 	
 	# Handle head bob
 	bob_progress += delta * velocity.length() * float(is_on_floor())
