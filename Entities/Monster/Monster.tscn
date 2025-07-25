@@ -1,6 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2v1tr46tt4e7"]
+[gd_scene load_steps=11 format=3 uid="uid://b2v1tr46tt4e7"]
 
 [ext_resource type="Script" path="res://Entities/Monster/Monster.gd" id="1_edqfu"]
+[ext_resource type="Script" path="res://Entities/Monster/States/StateMachine.gd" id="2_r14su"]
+[ext_resource type="Script" path="res://Entities/Monster/States/MonsterIdle.gd" id="3_dubqx"]
+[ext_resource type="Script" path="res://Entities/Monster/States/MonsterRoam.gd" id="4_y2w0i"]
+[ext_resource type="Script" path="res://Entities/Monster/States/MonsterSeek.gd" id="5_d5kt0"]
+[ext_resource type="Script" path="res://Entities/Monster/States/MonsterChase.gd" id="6_i72t2"]
+[ext_resource type="Script" path="res://Entities/Monster/States/MonsterStalk.gd" id="7_arnwi"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_up4i5"]
 radius = 0.1
@@ -35,9 +41,57 @@ debug_enabled = true
 one_shot = true
 autostart = true
 
+[node name="DetectionTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="PlayerScanTimer" type="Timer" parent="."]
+wait_time = 0.5
+
 [node name="Sight" type="Area3D" parent="."]
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sight"]
 shape = SubResource("CylinderShape3D_2rfen")
 
+[node name="LineOfSightRay" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+target_position = Vector3(1, 0, 0)
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("2_r14su")
+initial_state = NodePath("MonsterIdle")
+
+[node name="MonsterIdle" type="Node" parent="StateMachine" node_paths=PackedStringArray("roam_state", "seek_state", "chase_state", "stalk_state")]
+script = ExtResource("3_dubqx")
+roam_state = NodePath("../MonsterRoam")
+seek_state = NodePath("../MonsterSeek")
+chase_state = NodePath("../MonsterChase")
+stalk_state = NodePath("../MonsterStalk")
+
+[node name="MonsterRoam" type="Node" parent="StateMachine" node_paths=PackedStringArray("idle_state", "seek_state", "chase_state", "stalk_state")]
+script = ExtResource("4_y2w0i")
+idle_state = NodePath("../MonsterIdle")
+seek_state = NodePath("../MonsterSeek")
+chase_state = NodePath("../MonsterChase")
+stalk_state = NodePath("../MonsterStalk")
+
+[node name="MonsterSeek" type="Node" parent="StateMachine" node_paths=PackedStringArray("idle_state", "roam_state", "chase_state", "stalk_state")]
+script = ExtResource("5_d5kt0")
+idle_state = NodePath("../MonsterIdle")
+roam_state = NodePath("../MonsterRoam")
+chase_state = NodePath("../MonsterChase")
+stalk_state = NodePath("../MonsterStalk")
+
+[node name="MonsterChase" type="Node" parent="StateMachine" node_paths=PackedStringArray("seek_state")]
+script = ExtResource("6_i72t2")
+seek_state = NodePath("../MonsterSeek")
+
+[node name="MonsterStalk" type="Node" parent="StateMachine" node_paths=PackedStringArray("seek_state", "chase_state")]
+script = ExtResource("7_arnwi")
+seek_state = NodePath("../MonsterSeek")
+chase_state = NodePath("../MonsterChase")
+
 [connection signal="timeout" from="DecisionTimer" to="." method="change_behavior"]
+[connection signal="timeout" from="PlayerScanTimer" to="." method="scan_for_players"]
+[connection signal="body_entered" from="Sight" to="." method="_on_sight_body_entered"]
+[connection signal="body_exited" from="Sight" to="." method="_on_sight_body_exited"]
