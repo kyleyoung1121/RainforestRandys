@@ -108,10 +108,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0329717, -0.247587)
 
 [node name="Flashlight" type="SpotLight3D" parent="Head/Camera3D"]
 light_color = Color(0.88361, 0.845974, 0.801334, 1)
+light_energy = 1.9
 light_volumetric_fog_energy = 0.1
-spot_range = 25.0
-spot_angle = 57.0
-spot_angle_attenuation = 3.03144
+light_specular = 0.3
+spot_range = 60.0
+spot_attenuation = 0.7
+spot_angle = 69.0
+spot_angle_attenuation = 2.0
 
 [node name="PlayerInteractor" parent="Head" node_paths=PackedStringArray("player") instance=ExtResource("2_l05ql")]
 player = NodePath("../..")
