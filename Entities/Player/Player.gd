@@ -6,6 +6,7 @@ var speed
 const SPRINT_SPEED = 4
 const WALK_SPEED = 2.5
 const SENSITIVITY = 0.0012
+const ITEM_GLOW_RANGE = 8
 const FLASHLIGHT_BRIGHTNESS = 0.6
 var flashlight_on = true
 
@@ -23,29 +24,29 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 # Track the player's shopping list items
 var shopping_list = [
-	#"beer",  
-	#"apple_juice",
-	#"spaghetti", 
-	#"tortilla",
-	#"apple_pie",
-	#"instant_noodles",
-	#"schlamey",
-	#"hot_sauce",
+	"beer",  
+	"apple_juice",
+	"spaghetti", 
+	"tortilla",
+	"apple_pie",
+	"instant_noodles",
+	"schlamey",
+	"hot_sauce",
 	"tomato_soup",
-	#"cups",
+	"cups",
 	"ham",
 	"mak_and_cheese",
 	"canned_beans",
 	"instant_coffee",
-	#"milk",
-	#"toy_robot",
-	#"red_wine",
-	#"white_wine",
+	"milk",
+	"toy_robot",
+	"red_wine",
+	"white_wine",
 	"bacon",
 	"chicken_breast",
 	"hamburger_patties",
 	"hot_dogs",
-	#"soda",
+	"soda",
 	"pizza_dough",
 	"brownies"
 ]
@@ -54,13 +55,17 @@ var items_collected = 0
 # Get component references
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+@onready var player_sight_ray_cast = $Head/Camera3D/PlayerSightRayCast
 @onready var phone = $Head/Camera3D/Phone
 @onready var flashlight = $Head/Camera3D/Flashlight
+@onready var item_glow_range_area_3d = $ItemGlowRangeArea3D
+@onready var item_glow_range_collision = $ItemGlowRangeArea3D/CollisionShape3D
 
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	flashlight.light_energy = FLASHLIGHT_BRIGHTNESS
+	item_glow_range_collision.shape.radius = ITEM_GLOW_RANGE
 	update_list()
 
 
@@ -90,6 +95,10 @@ func update_list():
 		phone.get_node("LineBreak").visible = true
 		phone.get_node("LineBreak2").visible = true
 		phone.get_node("LineBreak2").text = str(left_over_items) + " Additional Items"
+
+
+func get_player_sight_ray_cast() -> RayCast3D:
+	return player_sight_ray_cast
 
 
 func _unhandled_input(event):
@@ -179,3 +188,13 @@ func _headbob(time) -> Vector3:
 func _on_player_interactor_item_collected(item_name):
 	shopping_list.erase(item_name)
 	update_list()
+
+
+func _on_item_glow_range_area_entered(area):
+	if area is ItemGlow:
+		area.turn_on()
+
+
+func _on_item_glow_range_area_exited(area):
+	if area is ItemGlow:
+		area.turn_off()

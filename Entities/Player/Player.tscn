@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkk6ungki5g5g"]
+[gd_scene load_steps=8 format=3 uid="uid://dkk6ungki5g5g"]
 
 [ext_resource type="Script" path="res://Entities/Player/Player.gd" id="1_oi81s"]
 [ext_resource type="PackedScene" uid="uid://daua1ku7p3rtk" path="res://Props/Meshes/phone/phone.tscn" id="2_esboq"]
@@ -11,6 +11,13 @@ height = 1.1
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g7obl"]
 radius = 0.1
 height = 1.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_27luf"]
+size = Vector3(0.514, 3.328, 1.875)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_uevea"]
+height = 10.0
+radius = 10.0
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 collision_layer = 5
@@ -28,6 +35,11 @@ shape = SubResource("CapsuleShape3D_g7obl")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
+
+[node name="PlayerSightRayCast" type="RayCast3D" parent="Head/Camera3D"]
+target_position = Vector3(0, 0, -10)
+collision_mask = 18
+collide_with_areas = true
 
 [node name="Phone" type="Node3D" parent="Head/Camera3D"]
 transform = Transform3D(0.825854, -0.0805353, 0.558103, -0.00337619, 0.989024, 0.147714, -0.563873, -0.123875, 0.816518, -0.285302, -0.20088, -0.290089)
@@ -120,8 +132,18 @@ spot_angle_attenuation = 2.0
 player = NodePath("../..")
 
 [node name="CollisionShape3D" parent="Head/PlayerInteractor" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.26387, -0.427969)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.26387, -0.769644)
+shape = SubResource("BoxShape3D_27luf")
+
+[node name="ItemGlowRangeArea3D" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 32
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ItemGlowRangeArea3D"]
+shape = SubResource("CylinderShape3D_uevea")
 
 [connection signal="item_collected" from="Head/PlayerInteractor" to="." method="_on_player_interactor_item_collected"]
+[connection signal="area_entered" from="ItemGlowRangeArea3D" to="." method="_on_item_glow_range_area_entered"]
+[connection signal="area_exited" from="ItemGlowRangeArea3D" to="." method="_on_item_glow_range_area_exited"]
 
 [editable path="Head/PlayerInteractor"]

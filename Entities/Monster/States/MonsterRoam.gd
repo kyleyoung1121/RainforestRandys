@@ -33,7 +33,7 @@ func physics_update(delta):
 		var next_path_position = parent.navigation.get_next_path_position()
 		var new_velocity = (next_path_position - parent.position).normalized()
 		new_velocity *= parent.SPEED * parent.SLOW_SPEED_MULTIPLIER
-		parent.velocity = parent.velocity.lerp(new_velocity, parent.ACCELERATION * delta)
+		parent.velocity = parent.velocity.lerp(new_velocity, 1.0 - exp(-parent.ACCELERATION * delta))
 
 
 func choose_roam_destination():

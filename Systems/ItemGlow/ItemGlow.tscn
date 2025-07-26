@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://hef7oblyj76n"]
+
+[ext_resource type="Script" path="res://Systems/ItemGlow/ItemGlow.gd" id="1_610ff"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_duchn"]
+
+[node name="ItemGlow" type="Area3D"]
+collision_layer = 32
+collision_mask = 0
+script = ExtResource("1_610ff")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_duchn")
+
+[node name="OmniLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.975534, 1.06942e-09, 0.219846, -0.219846, 9.60978e-09, 0.975534, -1.06942e-09, -1, 9.60978e-09, 0.077, 0.261, 0)
+light_color = Color(0.660874, 0.471245, 0, 1)
+light_energy = 0.01
+light_indirect_energy = 0.01
+spot_range = 0.5
+spot_angle = 50.0

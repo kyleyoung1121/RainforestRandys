@@ -34,7 +34,7 @@ func populate_shelves():
 			place_item(optional_item, false)
 
 
-func place_item(item, lit):
+func place_item(item, on_list):
 	# Determine which department this item is in
 	var item_department = ItemData.departments[item]
 	
@@ -79,10 +79,10 @@ func place_item(item, lit):
 		item_instance.add_child(mesh_instance)
 		# Attach the item to the spawn point
 		available_spawn_point.add_child(item_instance)
-		item_instance.configure_item_name(item)
+		item_instance.set_item_name(item)
 		
-		if lit:
-			item_instance.set_lighting(lit)
+		if on_list:
+			item_instance.set_required(true)
 		
 		# Slightly adjust transform
 		item_instance.position.x += randf_range(-item_position_variance, item_position_variance)
@@ -90,7 +90,7 @@ func place_item(item, lit):
 		item_instance.rotation.y += randf_range(-deg_to_rad(item_rotation_variance), deg_to_rad(item_rotation_variance))
 		
 		# DEBUG
-		print("Item added! (" + ItemData.stylize_text(item) + ")" )
+		#print("Item added! (" + ItemData.stylize_text(item) + ")" )
 
 
 func get_optional_items():

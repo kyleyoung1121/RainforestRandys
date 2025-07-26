@@ -2,11 +2,11 @@ extends CharacterBody3D
 
 
 const SPEED := 3.0
-const ACCELERATION := 5.0
-const SLOW_SPEED_MULTIPLIER := 0.4
-const SIGHT := 10.0
+const ACCELERATION := 2.5
+const SLOW_SPEED_MULTIPLIER := 0.6
+const SIGHT := 13.0
 const DECISION_TIMER_DELAY := [5, 15]
-const DETECTION_TIME := 1.5
+const DETECTION_TIME := 2.5
 
 @onready var navigation := $NavigationAgent3D
 @onready var decision_timer := $DecisionTimer

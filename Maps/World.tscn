@@ -187,10 +187,10 @@ size = Vector3(209.921, 9.94922, 1)
 script = ExtResource("1_oqjqo")
 
 [node name="Player" parent="." instance=ExtResource("1_ccl2r")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 42.9622, 0.000326926, -17.0645)
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 31.9136, 0.0107961, -20.4501)
 
 [node name="Monster" parent="." instance=ExtResource("3_s1g30")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7797, 0.000254869, -24.9877)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.1331, 0.000254869, 8.2024)
 
 [node name="Environment" type="Node3D" parent="."]
 
@@ -561,10 +561,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8902, 0, -100.407)
 
 [node name="ShelfGroup015" type="Node3D" parent="NavigationRegion3D/Shelves/Grocery"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.2216, 0, 6.49495)
-metadata/_edit_group_ = true
 
 [node name="shelf" parent="NavigationRegion3D/Shelves/Grocery/ShelfGroup015" instance=ExtResource("3_ugq15")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.624, 0, -0.252)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.60064, 0, -0.266317)
 
 [node name="shelf2" parent="NavigationRegion3D/Shelves/Grocery/ShelfGroup015" instance=ExtResource("3_ugq15")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.624, 0, -0.252)

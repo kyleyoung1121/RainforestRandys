@@ -18,7 +18,7 @@ func exit():
 
 func physics_update(delta):
 	if parent:
-		parent.velocity = parent.velocity.lerp(Vector3(), parent.ACCELERATION * delta)
+		parent.velocity = parent.velocity.lerp(Vector3(), 1.0 - exp(-parent.ACCELERATION * delta))
 
 
 func on_player_lost():
